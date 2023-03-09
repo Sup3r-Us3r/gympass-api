@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-api-solid",
+  "version": "1.0.0",
+  "description": "API Solid",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix"
+  },
+  "keywords": [
+    "api",
+    "solid",
+    "nodejs",
+    "tests"
+  ],
+  "author": "Mayderson",
+  "license": "MIT",
+  "devDependencies": {
+    "@sup3r-us3r/eslint-config": "^1.2.0",
+    "@types/node": "^18.15.0",
+    "eslint": "^8.35.0",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "fastify": "^4.14.1"
+  }
+}
