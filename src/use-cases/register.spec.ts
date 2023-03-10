@@ -1,5 +1,5 @@
 import { compare } from 'bcryptjs';
-import { describe, it, expect, beforeAll, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository';
 
