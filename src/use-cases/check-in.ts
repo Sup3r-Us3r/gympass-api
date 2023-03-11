@@ -1,4 +1,4 @@
-import { ICheckInsRepository } from '@/repositories/check-ins-respository';
+import { ICheckInsRepository } from '@/repositories/check-ins-repository';
 import { IGymsRepository } from '@/repositories/gyms-repository';
 import { getDistanceBetweenCoordinates } from '@/utils/get-distance-between-coordinates';
 import { CheckIn } from '@prisma/client';
