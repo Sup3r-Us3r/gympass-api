@@ -1,10 +1,10 @@
 import { ICheckInsRepository } from '@/repositories/check-ins-repository';
 
-interface IGetUserMetricsRequest {
+interface IGetUserMetricsUseCaseRequest {
   userId: string;
 }
 
-interface IGetUserMetricsResponse {
+interface IGetUserMetricsUseCaseResponse {
   checkInsCount: number;
 }
 
@@ -13,7 +13,7 @@ class GetUserMetricsUseCase {
 
   async execute({
     userId,
-  }: IGetUserMetricsRequest): Promise<IGetUserMetricsResponse> {
+  }: IGetUserMetricsUseCaseRequest): Promise<IGetUserMetricsUseCaseResponse> {
     const checkInsCount = await this.checkInsRepository.countByUserId(userId);
 
     return {
