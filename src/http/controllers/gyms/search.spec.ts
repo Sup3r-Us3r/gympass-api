@@ -14,7 +14,7 @@ describe('Search Gyms Controller (E2E)', () => {
   });
 
   it('should be able to search gyms by title', async () => {
-    const { token } = await createAndAuthenticateUsers(app);
+    const { token } = await createAndAuthenticateUsers(app, true);
 
     await request(app.server)
       .post('/gyms')
