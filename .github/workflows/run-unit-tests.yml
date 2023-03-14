@@ -9,7 +9,7 @@ on:
 jobs:
   run-unit-tests:
     name: Run Unit Tests
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
